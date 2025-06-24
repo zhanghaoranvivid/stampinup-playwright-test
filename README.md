@@ -24,12 +24,12 @@ https://www.stampinup.com/
 
 ## 📂 Project Structure
 
-- src/ 
-	- main/java   
-		- com.haoranzhang.playwright.webapp_test/
- 	        	- pages/ # Page Object Models
-          		- locators/ # Centralized selectors
-          		- utils/ #userinfo  
+- src/
+	- main/java
+	 	- com.haoranzhang.playwright.webapp_test/
+   			- pages/ # Page Object Models
+      			- locators/ # Centralized selectors
+         		- utils/ #userinfo        
 	- test/java
  		- com.haoranzhang.playwright.webapp_test/
    			- FullFlowTest.java / # Test cases
