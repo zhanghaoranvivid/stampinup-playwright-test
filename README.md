@@ -24,27 +24,24 @@ https://www.stampinup.com/
 
 ## 📂 Project Structure
 
-src/ 
-main/java 
-	com.haoranzhang.playwright.webapp_test/ 
-	pages/ # Page Object Models 
-	locators/ # Centralized selectors 
-	utils/ #userinfo 
-test/java 
-	FullFlowTest.java / # Test cases
+- src/ 
+	- main/java   
+		- com.haoranzhang.playwright.webapp_test/
+ 	        	- pages/ # Page Object Models
+          		- locators/ # Centralized selectors
+          		- utils/ #userinfo  
+	- test/java
+ 		- com.haoranzhang.playwright.webapp_test/
+   			- FullFlowTest.java / # Test cases
 
 ## ▶️ How to Run
 
 Make sure you have:
-- Java 17+
+- Java
 - Maven installed
 
-Then run:
-
-```bash
-mvn test
 📌 Notes
 This project was created as a demo submission for a QA Engineer position.
 If you'd like me to extend this test, or switch to a different target site, feel free to let me know.
 
-Made with ❤️ by Haoran Zhan
+Made by Haoran Zhang
