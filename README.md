@@ -25,13 +25,12 @@ https://www.stampinup.com/
 ## 📂 Project Structure
 
 src/
-└── main/java
-   │── com.haoranzhang.playwright.webapp_test/
-   ├── pages/ # Page Object Models
-   ├── locators/ # Centralized selectors
-
+    main/java
+        com.haoranzhang.playwright.webapp_test/
+        pages/ # Page Object Models
+        locators/ # Centralized selectors
    test/java
-   │── FullFlowTest.java / # Test cases
+        FullFlowTest.java / # Test cases
 
 ## ▶️ How to Run
 
