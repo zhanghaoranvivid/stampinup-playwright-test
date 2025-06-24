@@ -22,8 +22,8 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 import static com.haoranzhang.playwright.webapp_test.locators.CheckOutLocators.*;
 
 import com.microsoft.playwright.Page;
-
-
+import static com.haoranzhang.playwright.webapp_test.utils.TestCredentials.*;
+import static com.haoranzhang.playwright.webapp_test.utils.TestData.*;
 public class FullFlowTest {
 	static Playwright playwright;
     static Browser browser;
@@ -48,12 +48,18 @@ public class FullFlowTest {
         ProductPage productPage = new ProductPage(page);
         CheckoutPage checkoutPage = new CheckoutPage(page);
         registerPage.navigateToLogin();
-        registerPage.register("zhanghaoranvivid@gmail.com", "qwer1234");
+        registerPage.register(EMAIL, PASSWORD);
         
         //Assertion: Login success - greeting message appears
         Assert.assertTrue(registerPage.getResultText("Hello"));
         productPage.searchProduct();
-        checkoutPage.proceedToCheckout("Lucy", "Test", "305 Malvern Ave", "", "Hot Springs", "71901", "123456789");
+        checkoutPage.proceedToCheckout(FIRST_NAME,
+        	    LAST_NAME,
+        	    ADDRESS1,
+        	    ADDRESS2,
+        	    CITY,
+        	    POSTAL_CODE,
+        	    PHONE); 
         
         //Assertion: Payment step reached
         Assert.assertTrue(checkoutPage.getResultText("Payment Method"));    
